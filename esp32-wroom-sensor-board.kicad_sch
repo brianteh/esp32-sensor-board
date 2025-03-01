@@ -4488,6 +4488,12 @@
 		(uuid "7e7d9dd0-82dd-4274-a91f-830771095fdd")
 	)
 	(junction
+		(at 358.14 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7fd8fd1f-5e83-4d81-b1b4-0487156c2bcd")
+	)
+	(junction
 		(at 68.58 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4923,7 +4929,7 @@
 	)
 	(wire
 		(pts
-			(xy 337.82 44.45) (xy 381 44.45)
+			(xy 337.82 44.45) (xy 358.14 44.45)
 		)
 		(stroke
 			(width 0)
@@ -4960,6 +4966,16 @@
 			(type default)
 		)
 		(uuid "37238dc4-7e86-4140-a1c0-33e4ed1569f0")
+	)
+	(wire
+		(pts
+			(xy 358.14 44.45) (xy 381 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "397a465c-3a50-43eb-95e7-aad6c6475962")
 	)
 	(wire
 		(pts
@@ -11339,6 +11355,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 358.14 36.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a6baf7ca-4c92-4ed2-bea2-656c697d6ece")
+		(property "Reference" "#PWR052"
+			(at 358.14 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 358.14 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 358.14 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 358.14 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 358.14 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "02364690-3a22-44cd-adc7-6161939801da")
+		)
+		(instances
+			(project "esp32-wroom-sensor-board"
+				(path "/96e60e6d-6bc4-4fef-9782-a76dc3d08852"
+					(reference "#PWR052")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 190.5 195.58 0)
 		(unit 1)
@@ -11951,6 +12033,76 @@
 			(project "esp32-wroom-sensor-board"
 				(path "/96e60e6d-6bc4-4fef-9782-a76dc3d08852"
 					(reference "#PWR044")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 358.14 40.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b1924c23-56f6-428c-9f61-49d3d5a75d3d")
+		(property "Reference" "R5"
+			(at 360.68 39.3699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 360.68 41.9099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 359.156 40.894 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 358.14 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 358.14 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a56e04b4-67b0-4d3b-8154-0e814dd416a3")
+		)
+		(pin "2"
+			(uuid "37051492-6d7a-408d-a430-97ae6a86a012")
+		)
+		(instances
+			(project "esp32-wroom-sensor-board"
+				(path "/96e60e6d-6bc4-4fef-9782-a76dc3d08852"
+					(reference "R5")
 					(unit 1)
 				)
 			)
